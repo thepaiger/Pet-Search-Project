@@ -34,16 +34,16 @@
     * Add search criteria and click through adoptable pets
 
 ## Post-MVP: A list of additional/advanced features you would like to include in your app after you have met MVP.
-		* Instead of populating all search results that fit criteria, create more of a Tinder set up - randomized pet within search criteria will display with bio details with ability to click through to official profile or "swipe" and move on
-			* May need to use a CSS carousel? 
-		* https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
-			* Touch event for swiping
-		
+  * Instead of populating all search results that fit criteria, create more of a Tinder set up - randomized pet within search criteria will display with bio details with ability to click through to official profile or "swipe" and move on
+    * May need to use a CSS carousel? 
+  * https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
+    * Touch event for swiping
+  
 ## Goals: What you plan to accomplish for each day of the project week.
 | Day	| Deliverable	| Status |
 | --- | ----------- | :----: | 
 | Oct 1	| Prompt / Project Approval / Fetch Request | Complete | 
-| Oct 2	| Wireframes / Timeframes | Incomplete | 
+| Oct 2	| Wireframes / Timeframes | Complete | 
 | Oct 3	| Core Application Structure / Priority Matrix(???) | Incomplete |
 | Oct 4	| Psuedocode | Incomplete | 
 | Oct 5	| Populate Majority Code & CSS | Incomplete |
@@ -56,8 +56,8 @@
 | --------- | :------: | :------------: | :-----------: | :---------: |
 | Wireframes | L | 2 HRS | 1 HR |  |
 | Add/test API Fetch | H | 2 HRS | 5 HRS |  |
-| Pseudocode Javascript	| H | 3 HRS |  |  |
-| HTML & JS Structure	| H | 5 HRS |  |  |
+| Pseudocode Javascript	| H | 3 HRS | 15min |  |
+| HTML & JS Structure	| H | 5 HRS | 30min |  |
 | Main CSS Styling | H | 3 HRS |  |  |
 | CSS Detailing | H | 3 HRS |  |  |
 | Adding Flexbox | H | 2 HRS |  |  |

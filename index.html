@@ -5,12 +5,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pet Tinder</title>
 
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Fetch!</title>
 </head>
 
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+    </nav>
+    <section>
+      <h1>Welcome to Fetch!</h1>
+      <p>Set up your preferences, then swipe through pets to find your perfect match!</p>
+    </section>
+  </header>
+
+  <main>
+    <section>
+      <h2>Select Your Preferences</h2>
+      <div>
+        <form action="pets.html">
+          <div>Pet Type</div>
+          <div>
+            <input type="checkbox" name="species" id="species-dog">
+            <label for="species-dog">Dog</label>
+
+            <input type="checkbox" name="species" id="species-cat">
+            <label for="species-cat">Cat</label>
+          </div>
+          <div>Pet Gender</div>
+          <div>
+            <input type="checkbox" name="gender" id="gender-male">
+            <label for="gender-male">Male</label>
+
+            <input type="checkbox" name="gender" id="gender-female">
+            <label for="gender-female">Female</label>
+          </div>
+          <!-- add breed dropdown?? -->
+          <!-- add age group?? -->
+          <div>
+            <input type="submit" value="See Your Matches">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
 
 </body>
 

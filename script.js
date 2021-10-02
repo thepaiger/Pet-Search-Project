@@ -47,14 +47,43 @@ const mainFetch = (data) => {
     })
     .then((resultsJSON) => {
       console.log(resultsJSON);
+      // need to figure out how to not use [0]? Names do change on refresh
+      renderPets(resultsJSON.animals[0])
     })
     .catch((error) => {
       console.error(`ERROR: ${error}`);
     });
 }
 
+/* 
+Connect API & initiate fetch
+Be able to return results for species, gender, picture, name, bio
+  Keys for searches:
+    age
+    breeds
+    gender
+    name
+    photos[i]
+    species
+    url
+    description
+
+  pull pet picture, name, & description
+  randomize info that is pulled up
 
 
+  in renderPets - get 1 pet displaying and a new pet loaded on click of the 'next' button
+    How to only access 1 at a time?
+    
+*/
+
+const renderPets = (petInfo) => {
+  // petInfo.forEach(pet => {
+  document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
+  document.querySelector('.pet-name').innerText = petInfo.name;
+  document.querySelector('.pet-bio').innerText = petInfo.description;
+  // })
+}
 
 
 
