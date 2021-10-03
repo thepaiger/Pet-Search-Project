@@ -77,6 +77,11 @@ Be able to return results for species, gender, picture, name, bio
     
 */
 
+
+
+// FIGURE OUT HOW TO FILTER OUT PETS W/O IMAGES & how to select only pets in filters
+// if statement or .includes?
+
 const renderPets = (petInfo) => {
   // petInfo.forEach(pet => {
   document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
@@ -87,5 +92,14 @@ const renderPets = (petInfo) => {
 
 
 
+// see this video for tutorial for sending form data to fetch API
+// https://www.youtube.com/watch?v=c3qWHnJJbSY
+const form = document.querySelector('.form');
+form.addEventListener('submit', () => {
+
+  const formData = new FormData(this);
+
+
+})
 
 
