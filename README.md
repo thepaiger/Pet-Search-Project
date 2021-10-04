@@ -92,8 +92,8 @@
 | --------- | :------: | :------------: | :-----------: |
 | Wireframes | L | 2 HRS | 1 HR |
 | Add/test API Fetch | H | 3 HRS | 7 HRS |
-| Pseudocode Javascript	| H | 3 HRS | 30 MIN |
-| HTML & JS	| H | 5 HRS | 6 HR 45 MIN |
+| Pseudocode Javascript	| H | 3 HRS | 45 MIN |
+| HTML & JS	| H | 10 HRS | 7 HR 30 MIN |
 | Main CSS Styling | H | 5 HRS |  |
 | CSS Detailing | H | 3 HRS |  |
 | Adding Flexbox | H | 2 HRS |  |

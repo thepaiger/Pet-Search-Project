@@ -16,11 +16,11 @@ https://kigiri.github.io/fetch/
 
 1. Connect API & initiate fetch
   * ~~DONE~~ Fetch for bearer token
-  * Fetch for animal type
-  * Connect event listener to search button
-  * Connect "Next" button to display next pet in array
-    ** Need loop connected to next button to cycle through pets
-    ** Use for loop starting at index 1? or forEach for entire 
+  * ~~DONE~~ Fetch for animal type
+  * ~~DONE~~ Connect event listener to search button
+  * ~~DONE~~ Connect "Next" button to display next pet in array
+    ** ~~DONE~~ Connect event listener to next button to cycle through pets
+    ** ===TESTING=== Filter out animals without pictures w/ if statement
 2. Be able to return results for pet details
   Keys for searches:
     age
@@ -32,17 +32,10 @@ https://kigiri.github.io/fetch/
     url
     description
 
-  pull pet picture, name, & description
-  randomize info that is pulled up
-
-  in renderPets - get 1 pet displaying and a new pet loaded on click of the 'next' button
-    How to only access 1 at a time?
-    Add if statement to filter out pets w/o photos
-
-  If statement to ignore pets without pictures
+3. ~~DONE~~ Pull pet picture, name, & description
   
 
-
+NEED TO FIGURE OUT HOW TO CLEAR PREVIOUS SELECTION IF SELECTION CHANGES MID-ARRAY - NEXT BUTTON WILL REVERT TO PREVIOUS SEARCH
 
 
   Don't display Meet the Pets section until See Matches has been clicked
@@ -96,10 +89,24 @@ const mainFetch = (data) => {
     .then((resultsJSON) => {
       console.log(resultsJSON);
       // need to figure out how to not use [0]? Names do change on refresh
-      renderFirstPet(resultsJSON.animals[0]);
-      let i = 1;
-      nextButton.addEventListener('click', () => {
+      // renderFirstPet(resultsJSON.animals[0]);
+      let i = 0;
+      if (resultsJSON.animals[i].photos[0] !== null) {
         renderMorePets(resultsJSON.animals[i]);
+      } else {
+        console.log("NO PICTURE" + resultsJSON.animals[i]);
+        i++;
+        renderMorePets(resultsJSON.animals[i]);
+      };
+      i++;
+      nextButton.addEventListener('click', () => {
+        if (resultsJSON.animals[i].photos[0] !== null) {
+          renderMorePets(resultsJSON.animals[i]);
+        } else {
+          console.log("NO PICTURE" + resultsJSON.animals[i]);
+          i++;
+          renderMorePets(resultsJSON.animals[i]);
+        }
         i++;
       })
       // nextButton.addEventListener('click', () => {
@@ -127,13 +134,14 @@ const renderFirstPet = (petInfo) => {
   document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
   document.querySelector('.pet-name').innerText = petInfo.name;
   document.querySelector('.pet-bio').innerText = petInfo.description;
+  document.querySelector('.findPetHere').href = petInfo.url;
 }
 
 const renderMorePets = (petInfo) => {
   document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
-  console.log(petInfo);
   document.querySelector('.pet-name').innerText = petInfo.name;
   document.querySelector('.pet-bio').innerText = petInfo.description;
+  document.querySelector('.findPetHere').href = petInfo.url;
 }
 
 
