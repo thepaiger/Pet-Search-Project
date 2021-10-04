@@ -79,7 +79,7 @@
 | --- | ----------- | :----: | 
 | Oct 1	| Prompt / Project Approval / Fetch Request | Complete | 
 | Oct 2	| Wireframes / Timeframes | Complete | 
-| Oct 3	| Core Application Structure / Priority Matrix(???) | Incomplete |
+| Oct 3	| Core Application Structure | Complete |
 | Oct 4	| Psuedocode | Incomplete | 
 | Oct 5	| Populate Majority Code & CSS | Incomplete |
 | Oct 6	| Complete Majority Code & CSS | Incomplete |
@@ -91,9 +91,9 @@
 | Component | Priority | Estimated Time | Time Invested	|
 | --------- | :------: | :------------: | :-----------: |
 | Wireframes | L | 2 HRS | 1 HR |
-| Add/test API Fetch | H | 2 HRS | 5 HRS |
-| Pseudocode Javascript	| H | 3 HRS | 15 MIN |
-| HTML & JS Structure	| H | 5 HRS | 2 HR 45 MIN |
+| Add/test API Fetch | H | 3 HRS | 7 HRS |
+| Pseudocode Javascript	| H | 3 HRS | 30 MIN |
+| HTML & JS	| H | 5 HRS | 6 HR 45 MIN |
 | Main CSS Styling | H | 5 HRS |  |
 | CSS Detailing | H | 3 HRS |  |
 | Adding Flexbox | H | 2 HRS |  |
