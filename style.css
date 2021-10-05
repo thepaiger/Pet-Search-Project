@@ -1,15 +1,69 @@
-/* html {
-  background-color: #c89f9c;
+/* 
+COLORS
+#f0efeb - light green
+#246a73 - dark teal
+#f4f5f5 - light grey
+ */
+
+/* ==========================GLOBAL STYLING========================== */
+
+html {
+  background-color: #246a73;
+  font-family: 'Quicksand', sans-serif;
 }
 
-nav {
-  background-color: #c36a5e;
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ==========================HEADER========================== */
+
+header {
+  background-color: #f4f5f5;
+  margin: 10vh 4vw 4vh 4vw;
+  padding: 1rem;
+  height: fit-content;
+  width: 80vw;
+  box-sizing: border-box;
+  border: solid #5c959c 5px;
+  border-radius: 10px;
+}
+
+section .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 main {
-  background-color: #eee2df;
+  background-color: #f4f5f5;
+  margin: 4vh 4vw;
+  padding: 1rem;
+  height: fit-content;
+  width: 80vw;
+  box-sizing: border-box;
+  border: solid #5c959c 5px;
+  border-radius: 10px;
 }
 
-footer {
-  background-color: #c36a5e;
-} */
+section .main.select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+section .main.pets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}

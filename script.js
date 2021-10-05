@@ -20,7 +20,7 @@ https://kigiri.github.io/fetch/
   * ~~DONE~~ Connect event listener to search button
   * ~~DONE~~ Connect "Next" button to display next pet in array
     ** ~~DONE~~ Connect event listener to next button to cycle through pets
-    ** ===TESTING=== Filter out animals without pictures w/ if statement
+    ** ~~DONE~~ Filter out animals without pictures w/ if statement
 2. Be able to return results for pet details
   Keys for searches:
     age
@@ -91,21 +91,21 @@ const mainFetch = (data) => {
       // need to figure out how to not use [0]? Names do change on refresh
       // renderFirstPet(resultsJSON.animals[0]);
       let i = 0;
-      if (resultsJSON.animals[i].photos[0] !== null) {
-        renderMorePets(resultsJSON.animals[i]);
+      if (resultsJSON.animals[i].photos.length !== 0) {
+        renderPets(resultsJSON.animals[i]);
       } else {
         console.log("NO PICTURE" + resultsJSON.animals[i]);
         i++;
-        renderMorePets(resultsJSON.animals[i]);
+        renderPets(resultsJSON.animals[i]);
       };
       i++;
       nextButton.addEventListener('click', () => {
-        if (resultsJSON.animals[i].photos[0] !== null) {
-          renderMorePets(resultsJSON.animals[i]);
+        if (resultsJSON.animals[i].photos.length !== 0) {
+          renderPets(resultsJSON.animals[i]);
         } else {
           console.log("NO PICTURE" + resultsJSON.animals[i]);
           i++;
-          renderMorePets(resultsJSON.animals[i]);
+          renderPets(resultsJSON.animals[i]);
         }
         i++;
       })
@@ -122,22 +122,7 @@ const mainFetch = (data) => {
 
 // add fetch for animal type - token, then type, then data
 
-
-
-
-
-
-// FIGURE OUT HOW TO FILTER OUT PETS W/O IMAGES & how to select only pets in filters
-// if statement or .includes?
-
-const renderFirstPet = (petInfo) => {
-  document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
-  document.querySelector('.pet-name').innerText = petInfo.name;
-  document.querySelector('.pet-bio').innerText = petInfo.description;
-  document.querySelector('.findPetHere').href = petInfo.url;
-}
-
-const renderMorePets = (petInfo) => {
+const renderPets = (petInfo) => {
   document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
   document.querySelector('.pet-name').innerText = petInfo.name;
   document.querySelector('.pet-bio').innerText = petInfo.description;
