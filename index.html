@@ -8,7 +8,8 @@
 
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <title>Fetch!</title>
 </head>
@@ -28,13 +29,11 @@
   </header>
 
   <main>
-    <section class="main select">
-      <div class="main select">
+    <section class="select">
+      <div class="select">
         <h2>Select Your Preferences</h2>
         <div>
           <form onsubmit="return false">
-            <!-- <div>Pet Type</div> -->
-            <!-- might need to switch to radio/dropdown -->
             <div>
               <label for="species-dog">Select the Species</label>
               <select name="species" id="species">
@@ -44,44 +43,37 @@
                 <option value="horse">horse</option>
               </select>
             </div>
-          </div>
-        <!-- <div>Pet Gender</div>
-          <div>
-            
-            <input type="select" name="gender" id="gender-male" value="male">
-            <label for="gender-male">Male</label>
+        </div>
 
-            <input type="select" name="gender" id="gender-female" value="female">
-            <label for="gender-female">Female</label>
-          </div> -->
-        <!-- add breed dropdown?? -->
-        <!-- add age group?? -->
         <div>
-          <!-- <input type="submit" value="See Your Matches" id="see-matches"> -->
           <button id="see-matches">See Matches</button>
         </div>
         </form>
       </div>
     </section>
-    <section class="main pets">
-      <div class="main pets">
-      <h2>Meet the Pets!</h2>
-      <div>
-        <div class="pet-pic-div">
-          <img class="pet-pic" src="" alt="pet-picture">
-        </div>
-        <div class="pet-name-div">
-          <h3 class="pet-name">ADD PET NAME HERE</h3>
-        </div>
-        <div class="pet-bio-div">
-          <p class="pet-bio"></p>
-        </div>
+    <section class="pets">
+      <div class="pets">
+        <!-- <h2>Meet the Pets!</h2> -->
+        <button id="next-match">Next</button>
         <div>
-          <p><a class="findPetHere" href="">Find this pet here</a></p>
+          <div class="pet-name-div">
+            <h3 class="pet-name"></h3>
+          </div>
+
+          <div class="pet-pic-div">
+            <img class="pet-pic" src="" alt="pet-picture">
+          </div>
+          
+          <div class="pet-bio-div">
+            <p class="pet-bio"></p>
+          </div>
+
+          <div>
+            <p><a class="findPetHere" href="">Find this pet here</a></p>
+          </div>
         </div>
+        
       </div>
-      <button id="next-match">Next</button>
-    </div>
     </section>
   </main>
 

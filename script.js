@@ -1,5 +1,3 @@
-console.log('is this on')
-
 /*
 ==========================SOURCES==========================
 
@@ -21,24 +19,24 @@ https://kigiri.github.io/fetch/
   * ~~DONE~~ Connect "Next" button to display next pet in array
     ** ~~DONE~~ Connect event listener to next button to cycle through pets
     ** ~~DONE~~ Filter out animals without pictures w/ if statement
-2. Be able to return results for pet details
-  Keys for searches:
-    age
-    breeds
-    gender
-    name
-    photos[i]
-    species
-    url
-    description
+2. ~~DONE~~ Be able to return results for pet details
+  * Keys for searches:
+    ** age
+    ** breeds
+    ** gender
+    ** name
+    ** photos[i]
+    ** species
+    ** url
+    ** description
 
 3. ~~DONE~~ Pull pet picture, name, & description
-  
 
-NEED TO FIGURE OUT HOW TO CLEAR PREVIOUS SELECTION IF SELECTION CHANGES MID-ARRAY - NEXT BUTTON WILL REVERT TO PREVIOUS SEARCH
+NEED TO FIGURE OUT HOW TO CLEAR PREVIOUS SELECTION IF SELECTION CHANGES MID-ARRAY - NEXT BUTTON WILL REVERT TO PREVIOUS SEARCH - REMOVE SECTION & REPLACE
 
 
-  Don't display Meet the Pets section until See Matches has been clicked
+4. ~~DONE~~ Don't display Meet the Pets section until See Matches has been clicked
+  * 
 */
 
 
@@ -68,16 +66,15 @@ matchButton.addEventListener('click', () => {
       console.log(resultsJSON)
       mainFetch(resultsJSON);
     })
-  // .catch((error) => {
-  //   console.error(`ERROR: ${error}`);
-  // })
+  .catch((error) => {
+    console.error(`ERROR: ${error}`);
+  })
 });
 
 // FETCH ADDING IN ACCESS TOKEN - FUNCTION USED ABOVE IN FETCH
 const mainFetch = (data) => {
   const SPECIES = document.querySelector('#species');
   const SPECIES_VALUE = SPECIES.options[SPECIES.selectedIndex].text;
-  console.log(SPECIES_VALUE)
   fetch(`${DOMAIN}${CATEGORY}?type=${SPECIES_VALUE}&limit=100`, {
     headers: {
       Authorization: `${data.token_type} ${data.access_token}`
@@ -88,8 +85,11 @@ const mainFetch = (data) => {
     })
     .then((resultsJSON) => {
       console.log(resultsJSON);
-      // need to figure out how to not use [0]? Names do change on refresh
-      // renderFirstPet(resultsJSON.animals[0]);
+      const selectSection = document.querySelector("section.select");
+      selectSection.style.display = "none";
+
+      const petSection = document.querySelector("section.pets");
+      petSection.style.display = "flex";
       let i = 0;
       if (resultsJSON.animals[i].photos.length !== 0) {
         renderPets(resultsJSON.animals[i]);
@@ -109,18 +109,12 @@ const mainFetch = (data) => {
         }
         i++;
       })
-      // nextButton.addEventListener('click', () => {
-      //   resultsJSON.animals.forEach(pet => {
-      //     renderPets(pet);
-      //   })
-      // })
     })
-  // .catch((error) => {
-  //   console.error(`ERROR: ${error}`);
-  // });
+  .catch((error) => {
+    console.error(`ERROR: ${error}`);
+  });
 }
 
-// add fetch for animal type - token, then type, then data
 
 const renderPets = (petInfo) => {
   document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
@@ -130,30 +124,3 @@ const renderPets = (petInfo) => {
 }
 
 
-
-
-
-
-
-
-
-
-// const mainFetch = (data) => {
-//   // ?type=dog after category
-//   fetch(`${DOMAIN}/types`, {
-//     headers: {
-//       Authorization: `${data.token_type} ${data.access_token}`
-//     }
-//   })
-//     .then((results) => {
-//       return results.json();
-//     })
-//     .then((resultsJSON) => {
-//       console.log(resultsJSON);
-//       // need to figure out how to not use [0]? Names do change on refresh
-//       renderPets(resultsJSON.animals)
-//     })
-//     .catch((error) => {
-//       console.error(`ERROR: ${error}`);
-//     });
-// }

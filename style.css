@@ -1,14 +1,20 @@
 /* 
+==========================SOURCES==========================
+For stripe background in body: https://stripesgenerator.com/
+*/
+
+/* 
 COLORS
-#f0efeb - light green
-#246a73 - dark teal
-#f4f5f5 - light grey
+#31AEEF - BLUE
+#1C1C1C - DARK GREY
+#EAEAEA - LIGHT GREY FOR STRIPES
+#F8F8F8 - LIGHTEST GREY FOR STRIPES
  */
 
 /* ==========================GLOBAL STYLING========================== */
 
 html {
-  background-color: #246a73;
+  /* background-color: #246a73; */
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -18,6 +24,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: linear-gradient(135deg, #eaeaea 25%, #f8f8f8 25%, #f8f8f8 50%, #eaeaea 50%, #eaeaea 75%, #f8f8f8 75%, #f8f8f8 100%);
+background-size: 22.63px 22.63px;
 }
 
 /* ==========================HEADER========================== */
@@ -52,7 +60,7 @@ main {
   border-radius: 10px;
 }
 
-section .main.select {
+section.select {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,8 +68,8 @@ section .main.select {
   text-align: center;
 }
 
-section .main.pets {
-  display: flex;
+section.pets {
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
