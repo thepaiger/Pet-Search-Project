@@ -1,22 +1,20 @@
 # Pet-Search-Project
 
 ## App Title: 
-### The name of your app.
   * Fetch!
   
 ## App Description: 
-### What your app will do.
-  * Pet tinder?
-    * Set profile for search criteria
-    * Search through pets
-    * Possibly less of a standard search setup and more randomized pets popping up to "swipe" through like Tinder? Dating profile for pets?
+  * Adoptable pet app
+    * Set search criteria for animal type
+    * Search through randomized pets
 
-## API: 
-### The API you are using and the information you plan to get from it.
+## Link to Live Site:
+  * https://thepaiger.github.io/Pet-Search-Project/
+
+## API:
   * https://www.petfinder.com/developers/v2/docs/
   
 ## API Snippet: 
-### A sample snippet of JSON from a successful GET request you have made to your API using Postman.
   * Object
     animals: Array(20)
       0:
@@ -48,12 +46,9 @@
         _links: {self: {…}, type: {…}, organization: {…}}
   
 ## Wireframes: 
-### The proposed layout and design of your app. Create mockups for your views. If your are creating multiple views including both desktop and mobile formats, and consider whether or not you need to account for landscape and portrait orientations. Please use a digital tool to complete your wireframe.
   * https://whimsical.com/EM56yA3fQrtiGH8Vfck5Qe
-    * IN PROGRESS
     
 ## MVP: 
-### A list of features you will need to build in order to meet the Minimum Viable Product. This will be the rubric your project will be graded against.
   1. Built with HTML, CSS, and JavaScript.
   2. Styled using Flexbox or Grid.
   3. Use fetch to make a request to an external data source and insert some of the retrieved data on to the DOM.
@@ -64,17 +59,13 @@
   8. A README.md file that contains your project worksheet, a link to your live, deployed site, and any necessary installation instructions such as npm i.
 
   * Build responsive website for searching adoptable pets
-    * Add search criteria and click through adoptable pets
+    * Add search filter and look through adoptable pets (multiple pets displayed at once)
 
 ## Post-MVP: 
-### A list of additional/advanced features you would like to include in your app after you have met MVP.
   * Instead of populating all search results that fit criteria, create more of a Tinder set up - randomized pet within search criteria will display with bio details with ability to click through to official profile or "swipe" and move on
-    * May need to use a CSS carousel? 
-  * https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
-    * Touch event for swiping
+  * Touch event for swiping
   
 ## Goals: 
-### What you plan to accomplish for each day of the project week.
 | Day	| Deliverable	| Status |
 | --- | ----------- | :----: | 
 | Oct 1	| Prompt / Project Approval / Fetch Request | Complete | 
@@ -87,15 +78,15 @@
 | Oct 8	| Presentations | Incomplete |
 
 ## Timeframes: 
-### How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
 | Component | Priority | Estimated Time | Time Invested	|
 | --------- | :------: | :------------: | :-----------: |
 | Wireframes | L | 2 HRS | 1 HR |
 | Add/test API Fetch | H | 3 HRS | 7 HRS |
-| Pseudocode Javascript	| H | 3 HRS | 45 MIN |
-| HTML & JS	| H | 10 HRS | 10 HRS |
-| Main CSS Styling | H | 5 HRS | 6 HRS |
-| MediaQueries/CSS Adjustments | H | 3 HRS |  |
-| Adding Flexbox | H | 2 HRS | 2 |
+| Pseudocode Javascript	| H | 3 HRS | 1 HR |
+| HTML | H | 5 HRS | 5 HRS |
+| JS | H | 5 HRS | 5 HRS |
+| Main CSS Styling | H | 5 HRS | 5 HRS |
+| CSS Adjustments | H | 3 HRS | 2 HRS |
+| Adding Flexbox | H | 2 HRS | 1 HR |
 | Media Queries | H | 3 HRS |  |
-| Total | H |  |  |
+| Total | H | 31 HRS | 27 HRS |
