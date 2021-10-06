@@ -1,20 +1,20 @@
 /* 
-==========================SOURCES==========================
+====================SOURCES====================
 For stripe background in body: https://stripesgenerator.com/
+Images from https://unsplash.com/
 */
 
 /* 
-COLORS
+=====================COLORS=====================
 #31AEEF - BLUE
 #1C1C1C - DARK GREY
 #EAEAEA - LIGHT GREY FOR STRIPES
 #F8F8F8 - LIGHTEST GREY FOR STRIPES
  */
 
-/* ==========================GLOBAL STYLING========================== */
+/* ==============GLOBAL STYLING============== */
 
 html {
-  /* background-color: #246a73; */
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -24,54 +24,168 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(135deg, #eaeaea 25%, #f8f8f8 25%, #f8f8f8 50%, #eaeaea 50%, #eaeaea 75%, #f8f8f8 75%, #f8f8f8 100%);
-background-size: 22.63px 22.63px;
+  background-image: linear-gradient(135deg, #eaeaea 18.75%, #f8f8f8 18.75%, #f8f8f8 50%, #eaeaea 50%, #eaeaea 68.75%, #f8f8f8 68.75%, #f8f8f8 100%);
+  background-size: 11.31px 11.31px;
 }
 
-/* ==========================HEADER========================== */
+/* ===================NAV=================== */
 
-header {
-  background-color: #f4f5f5;
-  margin: 10vh 4vw 4vh 4vw;
-  padding: 1rem;
-  height: fit-content;
-  width: 80vw;
-  box-sizing: border-box;
-  border: solid #5c959c 5px;
-  border-radius: 10px;
-}
-
-section .header {
+nav {
+  height: 15vh;
+  width: 100%;
+  margin: 0;
+  background-color: #1c1c1cdd;
+  color: #fff;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  align-items: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  box-shadow: 0 5px 5px #1c1c1ca5;
+  position: fixed;
+  top: 0;
 }
+
+/* ==================HEADER================== */
+
+header img {
+  margin: 15vh 0 0 0;
+  height: auto;
+  width: 100%;
+}
+
+/* ===================MAIN=================== */
 
 main {
-  background-color: #f4f5f5;
-  margin: 4vh 4vw;
-  padding: 1rem;
+  margin: -5vh 4vw 9vh 4vw;
   height: fit-content;
   width: 80vw;
-  box-sizing: border-box;
-  border: solid #5c959c 5px;
-  border-radius: 10px;
+  box-shadow: 0px 5px 10px #1c1c1ca5;
+}
+
+h2.header {
+  background-color: #1c1c1ce7;
+  color: #F8F8F8;
+  padding: 3vh 3vw;
+  margin: 0;
 }
 
 section.select {
   display: flex;
+}
+
+div.select {
+  background-color: #31acefd8;
+  height: 25vh;
+  width: 80vw;
+  display: flex;
+}
+
+form {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 
+form label {
+  padding-bottom: 2vh;
+  font-size: 20px;
+}
+
+form select {
+  margin-bottom: 2vh;
+  padding:.25vh 2vw;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  border: solid #1C1C1C 1px;
+  background-color: rgba(255, 255, 255, 0.872);
+}
+
+#see-matches, #next-match, button.findPetHere {
+  padding: .5vh 4vw;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: solid #1C1C1C 1px;
+  background-color: rgba(255, 255, 255, 0.872);
+}
+
+button.findPetHere {
+  margin-bottom: 2vh;
+}
+
+a.findPetHere {
+  text-decoration: none;
+  color: #000;
+}
+
+#next-match {
+  margin-bottom: 3vh;
+}
+
+#see-matches:hover, #next-match:hover, button.findPetHere:hover {
+  background-color: #31AEEF;
+  color: #fff;
+  border: solid #fff 1px;
+}
+
+a.findPetHere:hover {
+  color: #fff;
+}
+
 section.pets {
   display: none;
+  background-color: #31acefd8;
+  /* margin: 0 0 8vh 0; */
+}
+
+section.select, section.pets, div.select {
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.pet-name {
+  font-size: 25px;
+}
+
+/* .pet-pic-div {
+  width: 100%;
+  height: auto;
+} */
+
+/* ==================FOOTER================== */
+
+footer {
+  height: 5vh;
+  width: 100%;
+  margin: 0;
+  background-color: #1c1c1cdd;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  box-shadow: 0 -5px 5px #1c1c1ca5;
+  position: fixed;
+  bottom: 0;
+}
+
+svg {
+  height: 3.25vh;
+  width: auto;
+  margin: 0 1vw .5vh 1vw;
+  color: #fff;
+}
+
+svg:hover {
+  color: #31AEEF;
 }
