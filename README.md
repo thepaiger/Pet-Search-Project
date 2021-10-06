@@ -84,9 +84,9 @@
 | Add/test API Fetch | H | 3 HRS | 7 HRS |
 | Pseudocode Javascript	| H | 3 HRS | 1 HR |
 | HTML | H | 5 HRS | 5.5 HRS |
-| JS | H | 5 HRS | 5.5 HRS |
+| JS | H | 5 HRS | 6 HRS |
 | Main CSS Styling | H | 5 HRS | 5 HRS |
-| CSS Adjustments | H | 3 HRS | 2.5 HRS |
+| CSS Adjustments | H | 3 HRS | 3 HRS |
 | Adding Flexbox | H | 2 HRS | 1 HR |
-| Media Queries | H | 3 HRS | 2.5 HR |
+| Media Queries | H | 3 HRS | 3 HRS |
 | Total | H | 31 HRS |  HRS |
