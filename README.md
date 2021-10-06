@@ -62,7 +62,7 @@
     * Add search filter and look through adoptable pets
 
 ## Post-MVP: 
-  * Instead of populating all search results that fit criteria, create more of a Tinder set up - randomized pet within search criteria will display with bio details with ability to click through to official profile or "swipe" and move on
+  * Instead of populating all search results that fit criteria, create more of a Tinder set up - randomized pet within search criteria will display with bio details with ability to click through to official profile or "swipe" and move on to next pet
   * Touch event for swiping
   
 ## Goals: 
@@ -73,7 +73,7 @@
 | Oct 3	| Core Application Structure | Complete |
 | Oct 4	| Psuedocode & JS Functionality | In-Progress | 
 | Oct 5	| Populate Majority Code & CSS | Complete |
-| Oct 6	| Complete Majority Code & CSS | Incomplete |
+| Oct 6	| Complete Majority Code & CSS | Complete |
 | Oct 7	| CSS / Final Touches | Incomplete |
 | Oct 8	| Presentations | Incomplete |
 
@@ -83,8 +83,8 @@
 | Wireframes | L | 2 HRS | 1 HR |
 | Add/test API Fetch | H | 3 HRS | 7 HRS |
 | Pseudocode Javascript	| H | 3 HRS | 1 HR |
-| HTML | H | 5 HRS | 5 HRS |
-| JS | H | 5 HRS | 5 HRS |
+| HTML | H | 5 HRS | 5.5 HRS |
+| JS | H | 5 HRS | 5.5 HRS |
 | Main CSS Styling | H | 5 HRS | 5 HRS |
 | CSS Adjustments | H | 3 HRS | 2.5 HRS |
 | Adding Flexbox | H | 2 HRS | 1 HR |
