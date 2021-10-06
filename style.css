@@ -203,8 +203,13 @@ svg:hover {
   main, section.select div {
     max-width: 70vw;
   }
+
   header img {
     max-width: 80vw;
+  }
+
+  .pet-bio {
+    padding: 0 40px 0 40px;
   }
 }
 
@@ -212,8 +217,13 @@ svg:hover {
   main, section.select div {
     max-width: 60vw;
   }
+
   header img {
     max-width: 70vw;
+  }
+
+  .pet-bio {
+    padding: 0 50px 0 50px;
   }
 }
 
@@ -221,7 +231,12 @@ svg:hover {
   main, section.select div {
     max-width: 50vw;
   }
+
   header img {
     max-width: 60vw;
+  }
+
+  .pet-bio {
+    padding: 0 60px 0 60px;
   }
 }
