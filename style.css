@@ -163,21 +163,45 @@ footer {
   width: 100%;
   margin: 0;
   background-color: #1c1c1cdd;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 50px;
   box-shadow: 0 -5px 5px #1c1c1ca5;
   position: fixed;
   bottom: 0;
 }
 
+footer section {
+  height: 5vh;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section a {
+  padding: 0;
+}
+
+footer div {
+  height: 5vh;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+footer div p {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  color: #fff;
+}
+
 svg {
   height: 3.25vh;
   width: auto;
-  margin: 0 1vw .5vh 1vw;
+  margin: .5vh 1vw .5vh 1vw;
   color: #fff;
 }
 
