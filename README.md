@@ -81,7 +81,7 @@
 | Oct 2	| Wireframes / Timeframes | Complete | 
 | Oct 3	| Core Application Structure | Complete |
 | Oct 4	| Psuedocode & JS Functionality | In-Progress | 
-| Oct 5	| Populate Majority Code & CSS | Incomplete |
+| Oct 5	| Populate Majority Code & CSS | Complete |
 | Oct 6	| Complete Majority Code & CSS | Incomplete |
 | Oct 7	| CSS / Final Touches | Incomplete |
 | Oct 8	| Presentations | Incomplete |
@@ -93,9 +93,9 @@
 | Wireframes | L | 2 HRS | 1 HR |
 | Add/test API Fetch | H | 3 HRS | 7 HRS |
 | Pseudocode Javascript	| H | 3 HRS | 45 MIN |
-| HTML & JS	| H | 10 HRS | 9 HR 30 MIN |
-| Main CSS Styling | H | 5 HRS | 5 HRS |
-| CSS Detailing | H | 3 HRS |  |
-| Adding Flexbox | H | 2 HRS |  |
+| HTML & JS	| H | 10 HRS | 10 HRS |
+| Main CSS Styling | H | 5 HRS | 6 HRS |
+| MediaQueries/CSS Adjustments | H | 3 HRS |  |
+| Adding Flexbox | H | 2 HRS | 2 |
 | Media Queries | H | 3 HRS |  |
 | Total | H |  |  |
