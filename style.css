@@ -2,6 +2,7 @@
 ====================SOURCES====================
 For stripe background in body: https://stripesgenerator.com/
 Images from https://unsplash.com/
+Based overall styling off of https://www.onetail.org/ (recreated, not copied)
 */
 
 /* 
@@ -188,4 +189,12 @@ svg {
 
 svg:hover {
   color: #31AEEF;
+}
+
+/* ===============MEDIA QUERIES=============== */
+
+@media (min-width: 1025px) {
+  main, section.select div, header img {
+    max-width: 70vw;
+  }
 }

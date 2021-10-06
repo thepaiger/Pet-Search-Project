@@ -1,7 +1,7 @@
 # Pet-Search-Project
 
 ## App Title: 
-  * Fetch!
+  * Fetch
   
 ## App Description: 
   * Adoptable pet app
@@ -59,7 +59,7 @@
   8. A README.md file that contains your project worksheet, a link to your live, deployed site, and any necessary installation instructions such as npm i.
 
   * Build responsive website for searching adoptable pets
-    * Add search filter and look through adoptable pets (multiple pets displayed at once)
+    * Add search filter and look through adoptable pets
 
 ## Post-MVP: 
   * Instead of populating all search results that fit criteria, create more of a Tinder set up - randomized pet within search criteria will display with bio details with ability to click through to official profile or "swipe" and move on
