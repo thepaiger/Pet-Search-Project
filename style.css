@@ -194,7 +194,19 @@ svg:hover {
 /* ===============MEDIA QUERIES=============== */
 
 @media (min-width: 1025px) {
-  main, section.select div, header img {
+  main, section.select div {
+    max-width: 70vw;
+  }
+  header img {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 1201px) {
+  main, section.select div {
+    max-width: 60vw;
+  }
+  header img {
     max-width: 70vw;
   }
 }
