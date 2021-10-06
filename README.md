@@ -86,7 +86,7 @@
 | HTML | H | 5 HRS | 5 HRS |
 | JS | H | 5 HRS | 5 HRS |
 | Main CSS Styling | H | 5 HRS | 5 HRS |
-| CSS Adjustments | H | 3 HRS | 2 HRS |
+| CSS Adjustments | H | 3 HRS | 2.5 HRS |
 | Adding Flexbox | H | 2 HRS | 1 HR |
-| Media Queries | H | 3 HRS | 1 HR |
-| Total | H | 31 HRS | 27 HRS |
+| Media Queries | H | 3 HRS | 2.5 HR |
+| Total | H | 31 HRS |  HRS |

@@ -156,6 +156,10 @@ section.select, section.pets, div.select {
   font-size: 35px;
 }
 
+.pet-gender {
+  font-size: 20px;
+}
+
 .pet-bio {
   padding: 0 30px 0 30px;
 }
