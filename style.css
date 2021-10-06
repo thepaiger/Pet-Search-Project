@@ -210,3 +210,12 @@ svg:hover {
     max-width: 70vw;
   }
 }
+
+@media (min-width: 1401px) {
+  main, section.select div {
+    max-width: 50vw;
+  }
+  header img {
+    max-width: 60vw;
+  }
+}
