@@ -143,7 +143,6 @@ a.findPetHere:hover {
 section.pets {
   display: none;
   background-color: #31acefd8;
-  /* margin: 0 0 8vh 0; */
 }
 
 section.select, section.pets, div.select {
@@ -154,13 +153,8 @@ section.select, section.pets, div.select {
 }
 
 .pet-name {
-  font-size: 25px;
+  font-size: 35px;
 }
-
-/* .pet-pic-div {
-  width: 100%;
-  height: auto;
-} */
 
 /* ==================FOOTER================== */
 
