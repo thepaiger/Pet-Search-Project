@@ -120,7 +120,7 @@ const renderPets = (petInfo) => {
   document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
   document.querySelector('.pet-name').innerText = petInfo.name;
   document.querySelector('.pet-bio').innerText = petInfo.description;
-  document.querySelector('.findPetHere').href = petInfo.url;
+  document.querySelector('a.findPetHere').href = petInfo.url;
 }
 
 
