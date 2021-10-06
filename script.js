@@ -7,6 +7,8 @@ STACKOVERFLOW WITH LINK TO GUTHUB TO CONVERT cURL TO JS FETCH
 https://stackoverflow.com/questions/31039629/convert-curl-get-to-javascript-fetch/37801251
 LINK TO CONVERT cURL to JS FETCH
 https://kigiri.github.io/fetch/
+PAGE REFRESH FUNCTION
+https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click
 */
 
 /*
@@ -123,4 +125,7 @@ const renderPets = (petInfo) => {
   document.querySelector('a.findPetHere').href = petInfo.url;
 }
 
+const refreshPage = () => {
+  window.location.reload();
+}
 
