@@ -66,9 +66,9 @@ matchButton.addEventListener('click', () => {
       console.log(resultsJSON)
       mainFetch(resultsJSON);
     })
-  .catch((error) => {
-    console.error(`ERROR: ${error}`);
-  })
+    .catch((error) => {
+      console.error(`ERROR: ${error}`);
+    })
 });
 
 // FETCH ADDING IN ACCESS TOKEN - FUNCTION USED ABOVE IN FETCH
@@ -91,7 +91,7 @@ const mainFetch = (data) => {
       const petSection = document.querySelector("section.pets");
       petSection.style.display = "flex";
       let i = 0;
-      if (resultsJSON.animals[i].photos.length !== 0) {
+      if (resultsJSON.animals[i].photos.length !== 0 || resultsJSON.animals[i].photos[0].medium !== undefined) {
         renderPets(resultsJSON.animals[i]);
       } else {
         console.log("NO PICTURE" + resultsJSON.animals[i]);
@@ -100,7 +100,7 @@ const mainFetch = (data) => {
       };
       i++;
       nextButton.addEventListener('click', () => {
-        if (resultsJSON.animals[i].photos.length !== 0) {
+        if (resultsJSON.animals[i].photos.length !== 0 || resultsJSON.animals[i].photos[0].medium !== undefined) {
           renderPets(resultsJSON.animals[i]);
         } else {
           console.log("NO PICTURE" + resultsJSON.animals[i]);
@@ -110,9 +110,9 @@ const mainFetch = (data) => {
         i++;
       })
     })
-  .catch((error) => {
-    console.error(`ERROR: ${error}`);
-  });
+    .catch((error) => {
+      console.error(`ERROR: ${error}`);
+    });
 }
 
 
