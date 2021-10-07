@@ -93,10 +93,25 @@ const mainFetch = (data) => {
       const petSection = document.querySelector("section.pets");
       petSection.style.display = "flex";
       let i = 0;
-      if (resultsJSON.animals[i].photos.length !== 0 && resultsJSON.animals[i].photos[0].medium !== undefined) {
+      if (resultsJSON.animals[i].photos.length !== 0 && resultsJSON.animals[i].photos[0].medium !== undefined && i !== 99) {
+        console.log(i);
+        renderPets(resultsJSON.animals[i]);
+      } else if (i === 99 && resultsJSON.animals[i].photos.length === 0) {
+        i = 0;
+        while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
+          console.log("NO PICTURE" + i);
+          i++;
+          // console.log(i);
+        }
+        renderPets(resultsJSON.animals[i]);
+      } else if (i === 99) {
+        i = 0;
+        while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
+          console.log("NO PICTURE" + i);
+          i++;
+        }
         renderPets(resultsJSON.animals[i]);
       } else {
-
         while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
           console.log("NO PICTURE" + i);
           i++;
@@ -105,10 +120,24 @@ const mainFetch = (data) => {
       };
       i++;
       nextButton.addEventListener('click', () => {
-        if (resultsJSON.animals[i].photos.length !== 0 && resultsJSON.animals[i].photos[0].medium !== undefined) {
+        if (resultsJSON.animals[i].photos.length !== 0 && resultsJSON.animals[i].photos[0].medium !== undefined && i !== 99) {
+          console.log(i);
+          renderPets(resultsJSON.animals[i]);
+        } else if (i === 99 && resultsJSON.animals[i].photos.length === 0) {
+          i = 0;
+          while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
+            console.log("NO PICTURE" + i);
+            i++;
+          }
+          renderPets(resultsJSON.animals[i]);
+        } else if (i === 99) {
+          i = 0;
+          while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
+            console.log("NO PICTURE" + i);
+            i++;
+          }
           renderPets(resultsJSON.animals[i]);
         } else {
-
           while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
             console.log("NO PICTURE" + i);
             i++;
