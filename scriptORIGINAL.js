@@ -96,11 +96,8 @@ const mainFetch = (data) => {
       if (resultsJSON.animals[i].photos.length !== 0 && resultsJSON.animals[i].photos[0].medium !== undefined) {
         renderPets(resultsJSON.animals[i]);
       } else {
-
-        while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
-          console.log("NO PICTURE" + i);
-          i++;
-        }
+        console.log("NO PICTURE" + resultsJSON.animals[i]);
+        i++;
         renderPets(resultsJSON.animals[i]);
       };
       i++;
@@ -108,11 +105,8 @@ const mainFetch = (data) => {
         if (resultsJSON.animals[i].photos.length !== 0 && resultsJSON.animals[i].photos[0].medium !== undefined) {
           renderPets(resultsJSON.animals[i]);
         } else {
-
-          while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
-            console.log("NO PICTURE" + i);
-            i++;
-          }
+          console.log("NO PICTURE" + resultsJSON.animals[i]);
+          i++;
           renderPets(resultsJSON.animals[i]);
         }
         i++;
