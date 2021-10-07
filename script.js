@@ -31,27 +31,23 @@ https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-c
     ** species
     ** url
     ** description
-
 3. ~~DONE~~ Pull pet picture, name, & description
-
-NEED TO FIGURE OUT HOW TO CLEAR PREVIOUS SELECTION IF SELECTION CHANGES MID-ARRAY - NEXT BUTTON WILL REVERT TO PREVIOUS SEARCH - REMOVE SECTION & REPLACE
-
-
 4. ~~DONE~~ Don't display Meet the Pets section until See Matches has been clicked
-  * 
 */
 
+// ==========================FETCH DETAILS==========================
 
 const DOMAIN = 'https://api.petfinder.com/v2';
 const CATEGORY = '/animals';
 const API_KEY = 'YaPWOgbfJAuKvB8xziX6gCwdkWfonmZFLbd0iGdJWKBrDwjoTb';
 const API_SECRET = 'gkhz8FQAcHCcqgj4m9bc6tfKr6LfTZPzqFAd91U5';
 
-// ==========================FETCH==========================
+// ==========================BUTTON DECLARATIONS==========================
 
 const matchButton = document.querySelector('#see-matches');
 const nextButton = document.querySelector('#next-match');
-// const buttons = document.querySelectorAll('button');
+
+// ==========================FETCH FOR TOKEN==========================
 
 matchButton.addEventListener('click', () => {
   fetch(`${DOMAIN}/oauth2/token`, {
@@ -73,7 +69,9 @@ matchButton.addEventListener('click', () => {
     })
 });
 
-// FETCH ADDING IN ACCESS TOKEN - FUNCTION USED ABOVE IN FETCH
+// ==========================FETCH FUNCTION FOR DATA==========================
+// USED ABOVE IN FETCH
+
 const mainFetch = (data) => {
   const SPECIES = document.querySelector('#species');
   const SPECIES_VALUE = SPECIES.options[SPECIES.selectedIndex].text;
@@ -152,6 +150,8 @@ const mainFetch = (data) => {
     });
 }
 
+// ==========================ADDING IN PET DETAILS==========================
+
 const renderPets = (petInfo) => {
   document.querySelector('.pet-pic').src = petInfo.photos[0].medium;
   document.querySelector('.pet-name').innerText = petInfo.name;
@@ -159,6 +159,8 @@ const renderPets = (petInfo) => {
   document.querySelector('.pet-bio').innerText = petInfo.description;
   document.querySelector('a.findPetHere').href = petInfo.url;
 }
+
+// ==========================HOME BUTTON REFRESH==========================
 
 const refreshPage = () => {
   window.location.reload();

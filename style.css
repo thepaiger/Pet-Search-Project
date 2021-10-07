@@ -80,6 +80,8 @@ main {
   box-shadow: 0px 5px 10px #1c1c1ca5;
 }
 
+/* ===================SELECT SECTION=================== */
+
 h2.header {
   background-color: #1c1c1ce7;
   color: #F8F8F8;
@@ -123,6 +125,8 @@ form select {
   background-color: rgba(255, 255, 255, 0.872);
 }
 
+/* ===================BUTTONS=================== */
+
 #see-matches, #next-match, button.findPetHere {
   padding: .5vh 4vw;
   font-family: 'Quicksand', sans-serif;
@@ -156,16 +160,11 @@ a.findPetHere:hover {
   color: #fff;
 }
 
+/* ===================PETS SECTION=================== */
+
 section.pets {
   display: none;
   background-color: #31acefd8;
-}
-
-section.select, section.pets, div.select {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
 }
 
 .pet-name {
@@ -178,6 +177,15 @@ section.select, section.pets, div.select {
 
 .pet-bio {
   padding: 0 30px 0 30px;
+}
+
+/* ===================PETS/SELECT SECTIONS=================== */
+
+section.select, section.pets, div.select {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* ==================FOOTER================== */
