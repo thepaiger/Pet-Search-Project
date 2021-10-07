@@ -85,23 +85,29 @@ const mainFetch = (data) => {
     })
     .then((resultsJSON) => {
       console.log(resultsJSON);
+      // HIDE SELECT SECTION AFTER FETCH
       const selectSection = document.querySelector("section.select");
       selectSection.style.display = "none";
 
+      // SHOW PETS SECTION
       const petSection = document.querySelector("section.pets");
       petSection.style.display = "flex";
+      // SET ANIMALS ARRAY INDEX
       let i = 0;
+      // FIRST BUTTON
+      // CHECK IF THERE IS A PHOTO
       if (resultsJSON.animals[i].photos.length !== 0 && resultsJSON.animals[i].photos[0].medium !== undefined && i !== 99) {
         console.log(i);
         renderPets(resultsJSON.animals[i]);
+      // CHECK IF LAST ANIMAL HAS PHOTO, INCREMENT IF NOT
       } else if (i === 99 && resultsJSON.animals[i].photos.length === 0) {
         i = 0;
         while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
           console.log("NO PICTURE" + i);
           i++;
-          // console.log(i);
         }
         renderPets(resultsJSON.animals[i]);
+      // CHECK IF ON LAST ANIMAL
       } else if (i === 99) {
         i = 0;
         while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
@@ -109,6 +115,7 @@ const mainFetch = (data) => {
           i++;
         }
         renderPets(resultsJSON.animals[i]);
+      // IF NO PHOTOS, INCREMENT & TRY AGAIN
       } else {
         while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
           console.log("NO PICTURE" + i);
@@ -116,11 +123,15 @@ const mainFetch = (data) => {
         }
         renderPets(resultsJSON.animals[i]);
       };
+      // INCREMENT FOR NEXT CLICK
       i++;
+      // MOVE TO NEXT BUTTON
       nextButton.addEventListener('click', () => {
+        // CHECK IF THERE IS A PHOTO
         if (resultsJSON.animals[i].photos.length !== 0 && resultsJSON.animals[i].photos[0].medium !== undefined && i !== 99) {
           console.log(i);
           renderPets(resultsJSON.animals[i]);
+        // CHECK IF LAST ANIMAL HAS PHOTO, INCREMENT IF NOT
         } else if (i === 99 && resultsJSON.animals[i].photos.length === 0) {
           i = 0;
           while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
@@ -128,6 +139,7 @@ const mainFetch = (data) => {
             i++;
           }
           renderPets(resultsJSON.animals[i]);
+        // CHECK IF ON LAST ANIMAL
         } else if (i === 99) {
           i = 0;
           while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
@@ -135,6 +147,7 @@ const mainFetch = (data) => {
             i++;
           }
           renderPets(resultsJSON.animals[i]);
+        // IF NO PHOTOS, INCREMENT & TRY AGAIN
         } else {
           while (resultsJSON.animals[i].photos.length === 0 || resultsJSON.animals[i].photos[0].medium === undefined) {
             console.log("NO PICTURE" + i);
@@ -142,6 +155,7 @@ const mainFetch = (data) => {
           }
           renderPets(resultsJSON.animals[i]);
         }
+        // INCREMENT FOR NEXT CLICK
         i++;
       })
     })
