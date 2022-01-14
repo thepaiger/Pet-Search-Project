@@ -75,7 +75,7 @@
 | Oct 5	| Populate Majority Code & CSS | Complete |
 | Oct 6	| Complete Majority Code & CSS | Complete |
 | Oct 7	| CSS / Final Touches | Complete |
-| Oct 8	| Presentations | Incomplete |
+| Oct 8	| Presentations | Complete |
 
 ## Timeframes: 
 | Component | Priority | Estimated Time | Time Invested	|
