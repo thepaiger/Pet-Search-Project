@@ -8,6 +8,7 @@ footer {
   box-shadow: 0 -5px 5px #1c1c1ca5;
   position: fixed;
   bottom: 0;
+  left: 0;
 }
 
 footer section {

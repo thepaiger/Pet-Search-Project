@@ -1,5 +1,8 @@
 // CSS
-import './PetSearch.css'
+import "./PetSearch.css";
+
+// Services
+// import "../../services/fetch";
 
 export default function PetSearch() {
   return (
@@ -49,17 +52,16 @@ export default function PetSearch() {
 
             <div>
               <button className="findPetHere">
-                <a className="findPetHere" href="">Find this pet here</a>
+                <a className="findPetHere" href="">
+                  Find this pet here
+                </a>
               </button>
             </div>
 
             <button id="next-match">Next</button>
-
           </div>
         </div>
       </section>
-    </main >
-  )
+    </main>
+  );
 }
-
-
