@@ -1,0 +1,88 @@
+/* 
+====================SOURCES====================
+For stripe background in body: https://stripesgenerator.com/
+Images from https://unsplash.com/
+Based overall styling off of https://www.onetail.org/ (recreated, not copied)
+*/
+
+/* 
+=====================COLORS=====================
+#31AEEF - BLUE
+#1C1C1C - DARK GREY
+#EAEAEA - LIGHT GREY FOR STRIPES
+#F8F8F8 - LIGHTEST GREY FOR STRIPES
+ */
+
+/* ==============GLOBAL STYLING============== */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Shadows+Into+Light&display=swap");
+
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+    135deg,
+    #eaeaea 18.75%,
+    #f8f8f8 18.75%,
+    #f8f8f8 50%,
+    #eaeaea 50%,
+    #eaeaea 68.75%,
+    #f8f8f8 68.75%,
+    #f8f8f8 100%
+  );
+  background-size: 11.31px 11.31px;
+}
+
+/* ===============MEDIA QUERIES=============== */
+
+@media (min-width: 1025px) {
+  main,
+  section.select div {
+    max-width: 70vw;
+  }
+
+  header img {
+    max-width: 80vw;
+  }
+
+  .pet-bio {
+    padding: 0 40px 0 40px;
+  }
+}
+
+@media (min-width: 1201px) {
+  main,
+  section.select div {
+    max-width: 60vw;
+  }
+
+  header img {
+    max-width: 70vw;
+  }
+
+  .pet-bio {
+    padding: 0 50px 0 50px;
+  }
+}
+
+@media (min-width: 1401px) {
+  main,
+  section.select div {
+    max-width: 50vw;
+  }
+
+  header img {
+    max-width: 60vw;
+  }
+
+  .pet-bio {
+    padding: 0 60px 0 60px;
+  }
+}

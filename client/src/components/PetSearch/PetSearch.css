@@ -1,0 +1,122 @@
+/* ===================MAIN=================== */
+
+main {
+  margin: -5vh 4vw 9vh 4vw;
+  height: fit-content;
+  width: 80vw;
+  box-shadow: 0px 5px 10px #1c1c1ca5;
+}
+
+/* ===================SELECT SECTION=================== */
+
+h2.header {
+  background-color: #1c1c1ce7;
+  color: #f8f8f8;
+  padding: 3vh 3vw;
+  margin: 0;
+}
+
+section.select {
+  display: flex;
+}
+
+div.select {
+  background-color: #31acefd8;
+  height: 25vh;
+  width: 80vw;
+  display: flex;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+form label {
+  padding-bottom: 2vh;
+  font-size: 20px;
+}
+
+form select {
+  margin-bottom: 2vh;
+  padding: 0.25vh 2vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  border: solid #1c1c1c 1px;
+  background-color: rgba(255, 255, 255, 0.872);
+}
+
+/* ===================BUTTONS=================== */
+
+#see-matches,
+#next-match,
+button.findPetHere {
+  padding: 0.5vh 4vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: solid #1c1c1c 1px;
+  background-color: rgba(255, 255, 255, 0.872);
+}
+
+button.findPetHere {
+  margin-bottom: 2vh;
+}
+
+a.findPetHere {
+  text-decoration: none;
+  color: #000;
+}
+
+#next-match {
+  margin-bottom: 3vh;
+}
+
+#see-matches:hover,
+#next-match:hover,
+button.findPetHere:hover {
+  background-color: #31aeef;
+  color: #fff;
+  border: solid #fff 1px;
+}
+
+a.findPetHere:hover {
+  color: #fff;
+}
+
+/* ===================PETS SECTION=================== */
+
+section.pets {
+  display: none;
+  background-color: #31acefd8;
+}
+
+.pet-name {
+  font-size: 35px;
+}
+
+.pet-gender {
+  font-size: 20px;
+}
+
+.pet-bio {
+  padding: 0 30px 0 30px;
+}
+
+/* =================PETS/SELECT SECTIONS================= */
+
+section.select,
+section.pets,
+div.select {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}

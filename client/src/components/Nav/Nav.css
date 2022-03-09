@@ -1,0 +1,33 @@
+/* ===================NAV=================== */
+
+nav {
+  height: 15vh;
+  width: 100%;
+  margin: 0;
+  background-color: #1c1c1cdd;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 5px 5px #1c1c1ca5;
+  z-index: 1;
+}
+
+nav div:first-of-type {
+  height: 15vh;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 50px;
+  z-index: 2;
+  position: absolute;
+}
+
+nav div:nth-of-type(2) {
+  z-index: 3;
+  display: flex;
+  right: 0;
+  position: absolute;
+  margin: 10px 10px 0 0;
+}

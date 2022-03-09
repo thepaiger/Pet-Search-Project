@@ -1,0 +1,36 @@
+/* ==================FOOTER================== */
+
+footer {
+  height: 5vh;
+  width: 100%;
+  margin: 0;
+  background-color: #1c1c1cdd;
+  box-shadow: 0 -5px 5px #1c1c1ca5;
+  position: fixed;
+  bottom: 0;
+}
+
+footer section {
+  height: 5vh;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section a {
+  padding: 0;
+}
+
+svg {
+  height: 3.25vh;
+  width: auto;
+  margin: 0.5vh 1vw 0.5vh 1vw;
+  color: #fff;
+}
+
+svg:hover {
+  color: #31aeef;
+}
