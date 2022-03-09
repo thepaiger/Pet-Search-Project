@@ -1,3 +1,6 @@
+// Packages
+import { Switch, Route } from 'react-router-dom';
+
 // Components
 import Layout from './layout/Layout';
 import Home from './screens/Home/Home';
@@ -10,8 +13,14 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Home />
-        <Matches />
+        <Switch>
+          <Route path='/matches'>
+            <Matches />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
       </Layout>
     </div>
   );
