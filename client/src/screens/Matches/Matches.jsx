@@ -1,7 +1,13 @@
+// Components
+import PetResults from '../../components/PetResults/PetResults'
+
+// CSS
 import './Matches.css'
 
 export default function Matches() {
   return (
-    <div>Matches</div>
+    <div>
+      <PetResults />
+    </div>
   )
 }
