@@ -4,10 +4,10 @@ import PetResults from '../../components/PetResults/PetResults'
 // CSS
 import './Matches.css'
 
-export default function Matches() {
+export default function Matches({ pets, setPets }) {
   return (
     <div>
-      <PetResults />
+      <PetResults pets={pets} setPets={setPets} />
     </div>
   )
 }

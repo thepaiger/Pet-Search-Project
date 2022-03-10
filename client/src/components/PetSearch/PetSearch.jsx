@@ -1,10 +1,40 @@
+// Packages
+import { useEffect } from 'react';
+
 // CSS
 import "./PetSearch.css";
 
 // Services
-// import "../../services/fetch";
+// import getToken from "../../services/apiConfig";
 
-export default function PetSearch() {
+export default function PetSearch({ pets, setPets, token }) {
+
+  // const DOMAIN = 'https://api.petfinder.com/v2';
+  // const CATEGORY = '/animals';
+  // const API_KEY = process.env.REACT_APP_API_KEY;
+  // const API_SECRET = process.env.REACT_APP_API_SECRET;
+
+  // Fetch pet data
+  // const fetchPets = async (token) => {
+  //   try {
+  //     const res = await api.get('https://api.tvmaze.com/search/shows?q=girls')
+  //     setPets(res.data);
+  //   } catch (err) {
+  //     if (err.res) {
+  //       // Not in 200 range
+  //       console.log(err.res.data);
+  //       console.log(err.res.status);
+  //       console.log(err.res.headers);
+  //     } else {
+  //       // No response, any other error
+  //       console.log(`Error: ${err.message}`);
+  //     }
+  //   }
+  // }
+
+
+  // console.log(pets)
+
   return (
     <section className="select">
       <div>

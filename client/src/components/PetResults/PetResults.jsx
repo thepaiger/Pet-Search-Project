@@ -1,7 +1,7 @@
 // CSS
 import './PetResults.css';
 
-export default function PetResults() {
+export default function PetResults({ pets, setPets }) {
   return (
     <section className="pets">
       <div className="pets">
